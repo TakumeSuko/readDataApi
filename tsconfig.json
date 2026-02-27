@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -17,9 +13,7 @@
     "isolatedModules": true,
     "jsx": "react-jsx",
     "incremental": true,
-    "types": [
-      "vitest/globals"
-    ],
+    "types": [],
     "plugins": [
       {
         "name": "next"
@@ -27,48 +21,20 @@
     ],
     "baseUrl": ".",
     "paths": {
-      "@/_assets/*": [
-        "src/app/_assets/*"
-      ],
-      "@/_components/*": [
-        "src/app/_components/*"
-      ],
-      "@/_constant/*": [
-        "src/app/_constant/*"
-      ],
-      "@/_graphql/*": [
-        "src/app/_graphql/*"
-      ],
-      "@/_styles/*": [
-        "src/app/_styles/*"
-      ],
-      "@/_types/*": [
-        "src/app/_types/*"
-      ],
-      "@/_utils/*": [
-        "src/app/_utils/*"
-      ],
-      "@/_config/*": [
-        "src/app/_config/*"
-      ],
-      "@/*": [
-        "src/app/(routes)/*"
-      ],
-      "@/public/*": [
-        "public/*"
-      ],
-      "@/package.json": [
-        "package.json"
-      ],
-      "@/gd_bundle-g2-g1.crt": [
-        "gd_bundle-g2-g1.crt"
-      ],
-      "@/public/lottie/*": [
-        "public/lottie/*"
-      ],
-      "@/public/images/*": [
-        "public/images/*"
-      ]
+      "@/_assets/*": ["src/app/_assets/*"],
+      "@/_components/*": ["src/app/_components/*"],
+      "@/_constant/*": ["src/app/_constant/*"],
+      "@/_graphql/*": ["src/app/_graphql/*"],
+      "@/_styles/*": ["src/app/_styles/*"],
+      "@/_types/*": ["src/app/_types/*"],
+      "@/_utils/*": ["src/app/_utils/*"],
+      "@/_config/*": ["src/app/_config/*"],
+      "@/*": ["src/app/(routes)/*"],
+      "@/public/*": ["public/*"],
+      "@/package.json": ["package.json"],
+      "@/gd_bundle-g2-g1.crt": ["gd_bundle-g2-g1.crt"],
+      "@/public/lottie/*": ["public/lottie/*"],
+      "@/public/images/*": ["public/images/*"]
     },
     "forceConsistentCasingInFileNames": true
   },
@@ -81,7 +47,5 @@
     "src/app/_components/CurrentCardStyle.test.tsx",
     ".next/dev/types/**/*.ts"
   ],
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules"]
 }
