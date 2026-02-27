@@ -1,13 +1,10 @@
-import grpc, { GrpcObject } from '@grpc/grpc-js';
-import protoLoader from '@grpc/proto-loader';
-import path from 'path';
+import * as grpc from '@grpc/grpc-js';
+import * as protoLoader from '@grpc/proto-loader';
 
-const packageDef = protoLoader.loadSync(
-  path.resolve(process.cwd(), 'src/proto/user.proto'),
-);
+const packageDefinition = protoLoader.loadSync('your.proto');
+const grpcObj = grpc.loadPackageDefinition(packageDefinition) as any;
 
-const grpcObj = grpc.loadPackageDefinition(packageDef) as GrpcObject;
-const userPackage = grpcObj.user;
+const userPackage = grpcObj.user as any;
 
 export const client = new userPackage.UserService(
   'localhost:50051',
